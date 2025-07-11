@@ -11,13 +11,13 @@ body {
 .container_head {
     display: flex;
     flex-direction: row;
-    flex-direction: column;
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(to right, #0277BD 15%, #0d48a19f);
     color: #ffffff;
     align-items: center;
     justify-content: center;
+    gap: 180px;
 }
 
 .head_txt {
@@ -31,8 +31,32 @@ body {
 }
 
 .head_img {
-    position: relative;
+     position: relative;
     animation: entrarImagem 0.75s ease-in-out forwards;
+}
+
+.led {
+    width: 350px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    left: -20px;
+    top: -60px;
+    animation: luz 2s infinite;
+}
+
+@keyframes luz {
+    0%, 100% {
+        box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+    } 50% {
+         box-shadow: 0 0 30px #0ff, 0 0 60px #0ff, 0 0 90px #0ff;
+    }
+}
+
+.container_led {
+    display: flex;
+    flex-direction: column;
 }
 
 .imagem_logo {
