@@ -1,0 +1,84 @@
+* {
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.container_head {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #0277BD 15%, #0d48a19f);
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.head_img {
+    position: relative;
+    animation: entrarImagem 0.75s ease-in-out forwards;
+}
+
+.imagem_logo {
+    width: 300px;
+    animation: moverImagem 1s ease-in-out infinite alternate forwards;
+    position: relative;
+}
+
+@keyframes moverImagem {
+    from {
+        top: 0px;
+    } to {
+        top: 5px;
+    }
+}
+
+@keyframes entrarImagem {
+    from {
+        transform: translateY(-1000vw);
+        opacity: 0;
+    } to {
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+#entrada {
+    width: 430px;
+}
+
+button {
+    width: 150px;
+    height: 33px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.496);
+    position: relative;
+    animation: botao alternate 1s infinite ease-in-out;
+}
+
+@keyframes botao{
+    from {
+        top: 0px;
+        box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.496);
+    } to {
+        top: 2px;
+        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.496);
+    }
+}
