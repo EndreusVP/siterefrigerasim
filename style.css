@@ -27,11 +27,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: -80px;
 }
 
 .head_img {
-     position: relative;
+    position: relative;
     animation: entrarImagem 0.75s ease-in-out forwards;
 }
 
@@ -43,14 +42,16 @@ body {
     position: relative;
     left: -20px;
     top: -60px;
-    animation: luz 2s infinite;
+    animation: luz 1s infinite;
+    box-shadow: 0 -55px 10px #0ff;
+    top: -110px;
 }
 
 @keyframes luz {
     0%, 100% {
-        box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+        box-shadow: 0 -15px 40px #ffffff, 0 -10px 30px #ffffff, 0 -5px 20px #ffffff ;
     } 50% {
-         box-shadow: 0 0 30px #0ff, 0 0 60px #0ff, 0 0 90px #0ff;
+         box-shadow: 0 -25px 20px #0ff, 0 -20px 10px, #0ff, 0 -15px 10px #0ff;
     }
 }
 
