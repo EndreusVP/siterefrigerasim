@@ -45,6 +45,7 @@ body {
     animation: luz 1s infinite;
     box-shadow: 0 -55px 10px #0ff;
     top: -110px;
+    z-index: 2;
 }
 
 @keyframes luz {
