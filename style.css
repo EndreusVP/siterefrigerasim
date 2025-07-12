@@ -6,6 +6,7 @@
 
 body {
     font-family: Poppins;
+    color: #323233;
 }
 
 .container_head {
@@ -147,5 +148,35 @@ button {
 }
 
 .container_sobre_loja > h1 {
-    color:#0D47A1;
+    color:#04357f;
 }
+
+.titulo_servicos {
+    color: #04357f;
+    text-align: center;
+}
+
+.container_servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+}
+
+.icones {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 35px;
+    color: #04357f;
+    position: relative;
+    top: 7px;
+}
+
