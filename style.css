@@ -37,7 +37,7 @@ body {
 
 .head_img {
     position: relative;
-    animation: entrarImagem 0.75s ease-in-out forwards;
+    animation: entrarImagem 2.5s ease-in-out forwards;
 }
 
 .led {
