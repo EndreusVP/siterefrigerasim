@@ -6,7 +6,9 @@
 
 body {
     font-family: Poppins;
-    color: #323233;
+    background-image: url(imagens/imagemfundo1.png);
+    background-repeat: no-repeat;
+    border: solid 5px #677ca725;
 }
 
 .container_head {
@@ -14,12 +16,12 @@ body {
     flex-direction: row;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
-    color: #ffffff;
+    /*background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);*/
     align-items: center;
+    color: #ffffff;
     justify-content: center;
     gap: 180px;
-    background-image: url(imagens/imagemfundo1.png);
+    background-color: #0000007e;
 }
 
 .head_txt {
@@ -47,16 +49,15 @@ body {
     left: -20px;
     top: -60px;
     animation: luz 1s infinite;
-    box-shadow: 0 -55px 10px #0ff;
     top: -110px;
     z-index: 2;
 }
 
 @keyframes luz {
     0%, 100% {
-        box-shadow: 0 -15px 40px #fff, 0 -10px 30px #ffffff, 0 -5px 20px #ffffff, 0 -30px 60px #ffffff;
+        box-shadow: 0 -15px 40px #fff, 0 -10px 30px #ffffff, 0 -5px 20px #ffffff;
     } 50% {
-         box-shadow: 0 -25px 20px #0ff, 0 -20px 10px, #0ff, 0 -15px 10px #0ff, 0 -45px 40px #0ff;
+         box-shadow: 0 -25px 20px #0ff, 0 -20px 10px, #0ff, 0 -15px 10px #0ff;
     }
 }
 
@@ -121,7 +122,8 @@ button {
     justify-content: center;
     gap: 50px;
     padding: 70px;
-    background-image: linear-gradient(45deg, #ffffff 70%, #677ca7);
+    /*background-image: linear-gradient(45deg, #ffffff 70%, #677ca7);*/
+    background-image: linear-gradient(45deg, #ffffff 60%, #ffffff00);
 }
 
 .linha {
@@ -149,17 +151,20 @@ button {
     height: 350px;
     border-radius: 20px;
     box-shadow: 0 0 20px #00000054;
-    border: solid 2px #677ca7;
+    /*border: solid 2px #677ca7;*/
+    border: solid 2px #0000006a;
 }
 
 .container_sobre_loja > h1 {
     color:#04357f;
-    border-bottom: solid 2px #677ca7;
+    /*border-bottom: solid 2px #677ca7;*/
+    border-bottom: solid 2px #000000;
 }
 
 .titulo_servicos {
     color: #04357f;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .container_servicos {
@@ -168,6 +173,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: #ffffff;
 }
 
 .servicos {
