@@ -1,12 +1,12 @@
 * {
-    margin: 0;;
+    margin: 0;
+    ;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Poppins;
-    background-repeat: no-repeat;
 }
 
 .container_head {
@@ -16,11 +16,22 @@ body {
     width: 100%;
     /*background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);*/
     background-image: url(imagens/imagemfundo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     align-items: center;
     color: #ffffff;
     justify-content: center;
     gap: 180px;
     background-color: #0000007e;
+}
+
+.container_head::before {
+    inset: 0;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .head_txt {
@@ -32,6 +43,7 @@ body {
     box-shadow: inset 0 0 20px #ffffff31;
     padding: 20px;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .head_img {
@@ -53,10 +65,14 @@ body {
 }
 
 @keyframes luz {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 -15px 40px #fff, 0 -10px 30px #ffffff, 0 -5px 20px #ffffff;
-    } 50% {
-         box-shadow: 0 -25px 20px #0ff, 0 -20px 10px, #0ff, 0 -15px 10px #0ff;
+    }
+
+    50% {
+        box-shadow: 0 -25px 20px #0ff, 0 -20px 10px, #0ff, 0 -15px 10px #0ff;
     }
 }
 
@@ -74,7 +90,9 @@ body {
 @keyframes moverImagem {
     from {
         top: 0px;
-    } to {
+    }
+
+    to {
         top: 5px;
     }
 }
@@ -83,7 +101,9 @@ body {
     from {
         transform: translateY(-1000vw);
         opacity: 0;
-    } to {
+    }
+
+    to {
         transform: rotateY(0);
         opacity: 1;
     }
@@ -93,7 +113,7 @@ body {
     width: 430px;
 }
 
-button {
+.solicitar_orcamento {
     width: 150px;
     height: 33px;
     border-radius: 7px;
@@ -104,11 +124,13 @@ button {
     background-color: #677ca7;
 }
 
-@keyframes botao{
+@keyframes botao {
     from {
         top: 0px;
         box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.496);
-    } to {
+    }
+
+    to {
         top: 2px;
         box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.496);
     }
@@ -139,7 +161,9 @@ button {
     from {
         width: 100px;
         left: 0;
-    } to {
+    }
+
+    to {
         width: 650px;
         left: 100vh;
     }
@@ -154,8 +178,8 @@ button {
     border: solid 2px #0000006a;
 }
 
-.container_sobre_loja > h1 {
-    color:#04357f;
+.container_sobre_loja>h1 {
+    color: #04357f;
     /*border-bottom: solid 2px #677ca7;*/
     border-bottom: solid 2px #000000;
 }
@@ -198,10 +222,38 @@ footer {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, #0278bd3f 15%, #0d48a164);
+    color: #262626;
+    padding: 30px;
 }
 
 .container_hora {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.endereco {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map {
+    font-size: 70px;
+    color: #04357f;
+}
+
+.container_botao_contato button {
+    background-color: #04357f;
+    color: #fff;
+    width: 150px;
+    height: 33px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 5px 5px 10px #0000006c;
+}
+
+button:hover {
+    cursor: pointer;
 }
