@@ -315,21 +315,21 @@ body {
 
 .servicos .servico1:hover {
     background-color: #0278bdc1;
-    transform: translateY(-30px);
+    transform: translateY(-30px) !important;
 }
 .servicos .servico2:hover {
     background-color: #0278bdc1;
-    transform: translateY(30px);
+    transform: translateY(-30px) !important;
 }
 
 .servicos .servico3:hover {
     background-color: #0278bdc1;
-    transform: translateY(-30px);
+    transform: translateY(-30px) !important;
 }
 
 .servicos .servico4:hover {
     background-color: #0278bdc1;
-    transform: translateY(30px);
+    transform: translateY(-30px) !important;
 }
 
 .icones {
@@ -347,9 +347,11 @@ footer {
     gap: 200px;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, #0278bd3f 15%, #0d48a164);
-    color: #262626;
+    /*background-image: linear-gradient(to right, #0278bd3f 15%, #0d48a164);*/
+    background-color: #000000;
+    color: #fff;
     padding: 30px;
+    font-weight: 200;
 }
 
 .container_hora {
