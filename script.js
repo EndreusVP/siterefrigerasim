@@ -12,3 +12,22 @@ const inserirTexto = () => {
 
 inserirTexto();
 
+/*tsParticles.load("particulas", {
+    fullScreen: {enable: false},
+     particles: {
+      number: { value: 60, density: { enable: true, area: 800 } },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.7, random: true },
+      size: { value: 3, random: true },
+      move: {
+        enable: true,
+        direction: "bottom",
+        speed: 1,
+        straight: false
+      }
+    },
+    background: {
+      color: "transparent"
+    }
+});*/

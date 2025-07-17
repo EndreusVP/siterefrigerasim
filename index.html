@@ -17,6 +17,9 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+
 
     <title>RefrigeraSim</title>
 
@@ -24,6 +27,7 @@
 
 <body>
     <div class="container_head">
+        <!--<div id="particulas"></div>-->
         <div class="container_led">
             <div class="head_img">
                 <img class="imagem_logo" src="/imagens/logotransparente.png" alt="">
@@ -40,33 +44,76 @@
         </div>
     </div>
 
-    <div class="container_sobre" data-aos="fade-right">
-        <div class="container_sobre_img">
+    <div class="imagem_separacao" data-aos="fade-right"></div>
+
+    <div class="container_sobre">
+        <!--<div class="container_sobre_img">
             <img src="imagens/imagemtecnico.png" alt="">
-        </div>
+        </div>-->
         <div class="container_sobre_loja">
             <h1>Sobre a Empresa</h1>
+            <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut perspiciatis, dignissimos maxime repellat
                 iure aliquid aperiam consequuntur minima ipsa sint odio nemo illum, deleniti accusantium blanditiis
                 explicabo maiores fugit totam.</p>
         </div>
     </div>
-    <div class="linha"></div>
+    <!--<div class="linha"></div>-->
+    <div class="container_servicos">
+        <div class="container_filho_servicos">
+            <h1 class="titulo_servicos">Serviços Prestados</h1>
 
-    <br>
-    <br>
+            <table>
+                <tr>
+                    <td>
+                        <details>
+                            <summary>Instalação de Ar-Condicionado</summary>
 
-    <h1 class="titulo_servicos">Serviços Prestados</h1>
+                            <p>
+                                A instalação correta do ar-condicionado é essencial para garantir o desempenho, a durabilidade e a economia de energia do aparelho.
+                            </p>
+                        </details>
+                    </td>
+                    <td>
+                        <details>
+                            <summary>Refrigeração Comercial</summary>
 
-    <div class="container_servicos" data-aos="fade-left">
-        <div class="servicos">
-            <p><i class="fa-solid fa-wind icones"></i>Instalação de Ar-Condicionado</p>
+                        <p>
+                            A refrigeração comercial é fundamental para manter alimentos e produtos na temperatura ideal, garantindo a conservação e a segurança dos itens armazenados.
+                        </p>
+
+                        </details>
+                        
+                    </td>
+                    <td>
+                        <details>
+                            <summary>Manutenção Preventiva</summary>
+
+                            <p>
+                                A manutenção preventiva é essencial para garantir o bom funcionamento e a durabilidade dos equipamentos de refrigeração e climatização.
+                            </p>
+                        </details>
+                    </td>
+                    <td>
+                        <details>
+                            <summary>Limpeza Tecnica</summary>
+
+                            <p>
+                                A limpeza técnica é fundamental para manter o ar-condicionado funcionando com eficiência e segurança. Ela remove poeira, fungos e impurezas que se acumulam nos filtros e serpentinas.
+                            </p>
+                        </details>
+                    </td>
+                </tr>
+            </table>
+
+
+        <!--<div class="servicos">
+            <p style="border: none;"><i class="fa-solid fa-wind icones"></i>Instalação de Ar-Condicionado</p>
             <p><i class="fas fa-snowflake icones"></i>Refrigeração Comercial</p>
             <p><i class="fa-solid fa-screwdriver-wrench icones"></i> Manutenção Preventiva</p>
-        </div>
-        <div class="servicos">
-            <p><i class="icones fa-solid fa-lines-leaning"></i>Limpeza Tecnica</p>
+             <p><i class="icones fa-solid fa-lines-leaning"></i>Limpeza Tecnica</p>
             <p><i class="fa-solid fa-temperature-low icones"></i></i>Conserto de Geladeiras</p>
+        </div>-->
         </div>
     </div>
 

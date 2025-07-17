@@ -14,8 +14,8 @@ body {
     flex-direction: row;
     height: 100vh;
     width: 100%;
-    /*background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);*/
-    background-image: url(imagens/imagemfundo1.png);
+    background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
+    /*background-image: url(imagens/imagemfundo1.png);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,13 +26,29 @@ body {
     background-color: #0000007e;
 }
 
-.container_head::before {
+/*.container_head::before {
     inset: 0;
     position: absolute;
     content: "";
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
+}*/
+
+/*.container_head *:not(#particulas) {
+    position: relative;
+    z-index: 1;
 }
+
+#particulas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}*/
+
 
 .head_txt {
     display: flex;
@@ -49,6 +65,7 @@ body {
 .head_img {
     position: relative;
     animation: entrarImagem 2.5s ease-in-out forwards;
+    z-index: 2;
 }
 
 .led {
@@ -136,7 +153,28 @@ body {
     }
 }
 
+.imagem_separacao {
+    background-image: url(imagens/imagemfundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    border-right: 70px solid #0d48a1;
+}
+
+.imagem_separacao::before {
+    inset: 0;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.775);
+}
+
 .container_sobre {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -144,10 +182,11 @@ body {
     gap: 50px;
     padding: 70px;
     /*background-image: linear-gradient(45deg, #ffffff 70%, #677ca7);*/
-    background-image: linear-gradient(45deg, #ffffff 65%, #677ca7);
+    background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
+    color: #fff;
 }
 
-.linha {
+/*.linha {
     width: 500px;
     height: 5px;
     background-color: #0d48a1;
@@ -167,7 +206,7 @@ body {
         width: 650px;
         left: 100vh;
     }
-}
+}*/
 
 .container_sobre_img > img {
     width: 400px;
@@ -177,14 +216,34 @@ body {
 }
 
 .container_sobre_loja>h1 {
-    color: #04357f;
+    color: #fff;
     /*border-bottom: solid 2px #677ca7;*/
+    text-align: center;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    font-weight: 500;
+}
+
+.container_sobre_loja > p {
+    text-align: center;
+    border: solid 0.5px #124fa9; 
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.container_sobre_loja > p:hover {
+    background-color: #124fa9;
+    cursor: pointer;
 }
 
 .titulo_servicos {
-    color: #04357f;
     text-align: center;
-    background-color: #ffffff;
+    font-weight: 500;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    padding: 10px;
 }
 
 .container_servicos {
@@ -193,7 +252,22 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #ffffff;
+    background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.container_filho_servicos {
+    background-color: #124fa9;
+    border-radius: 30px;
+    padding: 20px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vw;
+    width: 90vw;
 }
 
 .servicos {
@@ -201,6 +275,16 @@ body {
     flex-direction: row;
     gap: 20px;
     padding: 10px;
+    border: solid 0.5px #0278bdc1;
+    border-radius: 20px;
+}
+
+.servicos p {
+    border-left: #0278bdc1 solid 1.5px;
+}
+
+.servicos:hover p {
+    background-color: #0278bdc1;
 }
 
 .icones {
@@ -210,6 +294,31 @@ body {
     color: #04357f;
     position: relative;
     top: 7px;
+}
+
+table tr td{
+    padding: 20px;
+     border: solid 0.5px #0278bdc1;
+     border-radius: 20px;
+}
+
+table tr td:hover {
+    background-color: #0278bdc1;
+    cursor: pointer;
+}
+
+details[open] p {
+    width: 300px;
+    padding: 20px;
+}
+
+details summary::-webkit-details-marker {
+   display: none; 
+}
+
+details summary {
+    user-select: none;
+    list-style: none;
 }
 
 footer {
