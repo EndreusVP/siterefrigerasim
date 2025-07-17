@@ -256,6 +256,7 @@ body {
     color: #fff;
     font-weight: 200;
     font-size: 15px;
+    padding: 30px;
 }
 
 .container_filho_servicos {
@@ -266,7 +267,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30vw;
+    height: 32vw;
     width: 90vw;
 }
 
@@ -275,50 +276,50 @@ body {
     flex-direction: row;
     gap: 20px;
     padding: 10px;
+}
+
+.servico {
     border: solid 0.5px #0278bdc1;
     border-radius: 20px;
+    padding: 20px;   
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 300px;
+    transition: 0.5s ease-in-out;
 }
 
-.servicos p {
-    border-left: #0278bdc1 solid 1.5px;
+.servico:hover {
+    cursor: pointer;
 }
 
-.servicos:hover p {
+.servicos .servico1:hover {
     background-color: #0278bdc1;
+    transform: translateY(-30px);
+}
+.servicos .servico2:hover {
+    background-color: #0278bdc1;
+    transform: translateY(30px);
+}
+
+.servicos .servico3:hover {
+    background-color: #0278bdc1;
+    transform: translateY(-30px);
+}
+
+.servicos .servico4:hover {
+    background-color: #0278bdc1;
+    transform: translateY(30px);
 }
 
 .icones {
     padding: 5px;
     border-radius: 5px;
     font-size: 35px;
-    color: #04357f;
+    color: #fff;
     position: relative;
     top: 7px;
-}
-
-table tr td{
-    padding: 20px;
-     border: solid 0.5px #0278bdc1;
-     border-radius: 20px;
-}
-
-table tr td:hover {
-    background-color: #0278bdc1;
-    cursor: pointer;
-}
-
-details[open] p {
-    width: 300px;
-    padding: 20px;
-}
-
-details summary::-webkit-details-marker {
-   display: none; 
-}
-
-details summary {
-    user-select: none;
-    list-style: none;
 }
 
 footer {
