@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Poppins;
     overflow-x: hidden;
      background-image: linear-gradient(to right,#0278bdc1 15%, #0d48a1);
      background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 nav {
@@ -20,6 +28,8 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    position: fixed;
+    z-index: 1000;
 }
 
 nav div:nth-child(2) a {
@@ -59,7 +69,7 @@ nav > div img {
 nav > div {
     display: flex;
     align-items: first baseline;
-    width: 100vw;
+    width: 50vw;
     position: relative;
     left: 60px;
 }
