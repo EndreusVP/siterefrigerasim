@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
         <div class="led"></div>
     </div>
 
-    <div class="imagem_separacao" data-aos="fade-right"></div>
+    <div class="imagem_separacao" data-aos="fade-right" data-aos-once="true"></div>
 
     <div class="container_sobre">
         <!--<div class="container_sobre_img">
@@ -65,28 +66,28 @@
             <h1 class="titulo_servicos">Serviços Prestados</h1>
 
         <div class="servicos">
-            <div class="servico servico1" data-aos="fade-down">
+            <div class="servico servico1" data-aos="fade-down" data-aos-once="true">
                 <i class="fa-solid fa-wind icones"></i>
                 <p style="border: none;"></i>Instalação de Ar-Condicionado</p>
                 <p>
                     A instalação correta do ar-condicionado é essencial para garantir o desempenho, a durabilidade e a economia de energia do aparelho.
                 </p>
             </div>
-            <div class="servico servico2" data-aos="fade-up">
+            <div class="servico servico2" data-aos="fade-up" data-aos-once="true">
                 <p>Refrigeração Comercial</p>
                 <p>
                     A refrigeração comercial é fundamental para manter alimentos e produtos na temperatura ideal, garantindo a conservação e a segurança dos itens armazenados.
                 </p>
                 <i class="fas fa-snowflake icones"></i>
             </div>
-            <div class="servico servico3" data-aos="fade-down">
+            <div class="servico servico3" data-aos="fade-down" data-aos-once="true">
                 <i class="fa-solid fa-screwdriver-wrench icones"></i>
                 <p> Manutenção Preventiva</p>
                 <p>
                     A manutenção preventiva é essencial para garantir o bom funcionamento e a durabilidade dos equipamentos de refrigeração e climatização.
                 </p>
             </div>
-            <div class="servico servico4" data-aos="fade-up">
+            <div class="servico servico4" data-aos="fade-up" data-aos-once="true">
                 <p>Limpeza Tecnica</p>
                 <p>
                     A limpeza técnica é fundamental para manter o ar-condicionado funcionando com eficiência e segurança. Ela remove poeira, fungos e impurezas que se acumulam nos filtros e serpentinas
@@ -106,15 +107,22 @@
         <div>
             
             <div>
-                <img src="imagens/whatsapp-logo-2-1.png" alt="">
-                <span></span>
-                <img src="imagens/Instagram_icon.png" alt="">
-                 <span></span>
-                <img src="imagens/Facebook_f_logo_(2019).svg.png" alt="">
+                <img src="imagens/whatsapp-logo-2-1.png" alt="" data-aos-duration="1000" data-aos="fade-down" data-aos-once="true">
+                <span data-aos-duration="1200" data-aos="fade-down" data-aos-once="true"></span>
+                <img src="imagens/Instagram_icon.png" alt="" data-aos-duration="1400" data-aos="fade-down" data-aos-once="true">
+                 <span data-aos="fade-down" data-aos-duration="1600" data-aos-once="true"></span>
+                <img src="imagens/Facebook_f_logo_(2019).svg.png" alt="" data-aos="fade-down" data-aos-duration="1800" data-aos-once="true">
             </div>
 
             <div>
                 <h1>Contate-nos, <br> que resolveremos <br> seus problemas</h1>
+
+                <div class="campo_email">
+                    <input type="email" name="" id="" placeholder="ex@gmail.com">
+
+                    <button>Contate-nos</button>
+                </div>
+                
             </div>
 
         </div>

@@ -7,7 +7,8 @@
 body {
     font-family: Poppins;
     overflow-x: hidden;
-     background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
+     background-image: linear-gradient(to right,#0278bdc1 15%, #0d48a1);
+     background-repeat: no-repeat;
 }
 
 .container_head {
@@ -301,7 +302,7 @@ body {
 }
 
 .servico {
-    border: solid 0.5px #0278bdc1;
+    border: solid 0.5px #0d48a1;
     border-radius: 20px;
     padding: 20px;   
     gap: 20px;
@@ -317,21 +318,21 @@ body {
 }
 
 .servicos .servico1:hover {
-    background-color: #0278bdc1;
+    background-color: #0d48a1;
     transform: translateY(-30px) !important;
 }
 .servicos .servico2:hover {
-    background-color: #0278bdc1;
+    background-color: #0d48a1;
     transform: translateY(-30px) !important;
 }
 
 .servicos .servico3:hover {
-    background-color: #0278bdc1;
+    background-color: #0d48a1;
     transform: translateY(-30px) !important;
 }
 
 .servicos .servico4:hover {
-    background-color: #0278bdc1;
+    background-color: #0d48a1;
     transform: translateY(-30px) !important;
 }
 
@@ -384,11 +385,12 @@ body {
     justify-content: center;
     font-size: 30px;
     color: #000;    
+    gap: 20px;
 }
 
 .contato div:nth-child(2) > div img {
     width: 70px;
-    border: solid 2px #fff;
+    border: solid 3px #fff;
     border-radius: 50%;
     padding: 10px;
 }
@@ -400,6 +402,49 @@ body {
     margin: -2px;
     position: relative;
     left: 33px;
+}
+
+.contato div:nth-child(2) div:nth-child(2) > .campo_email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: hsl(0, 0%, 0%);
+    height: 75px;
+    border-radius: 50px;
+}
+
+.campo_email input {
+    background-color: #000;
+    border: none;
+    outline: none;
+    padding-inline-start: 20px;
+    border-radius: 60px;
+    height: 70px;
+    width: 400px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.campo_email input:focus {
+    outline: 2px solid #04357f;
+}
+
+.campo_email input::placeholder {
+    color: #fff;
+}
+
+.contato div:nth-child(2) div:nth-child(2) > .campo_email > button {
+    width: 130px;
+    border-radius: 50px;
+    border: 2px solid #0d48a1;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contato div:nth-child(2) div:nth-child(2) > .campo_email > button:hover {
+    background-color: #0d48a1;
 }
 
 footer {
