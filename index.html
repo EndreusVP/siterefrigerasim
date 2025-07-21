@@ -24,11 +24,27 @@
 
     <title>RefrigeraSim</title>
 
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
 </head>
 
 <body>
     <nav>
-        <img src="imagens/logo_mini.jpg" alt="">
+        <div>
+            <img src="imagens/logo_mini.jpg" alt="">
+        </div>
+        
+        <div>
+            <a href="#sobre"><h2>Sobre</h2></a>
+            <a href="#servico"><h2>Serviços</h2></a>
+            <a href="#contato"><h2>Contato</h2></a>
+            <a href="tel:+5521993245046" target="_blank"><button>Fale Conosco</button></a>
+        </div>
+        
     </nav>
     <div class="container_head">
         <!--<div id="particulas"></div>-->
@@ -50,11 +66,12 @@
             </a>
         </div>
         <div class="led"></div>
+
     </div>
 
     <div class="imagem_separacao" data-aos="fade-right" data-aos-once="true"></div>
 
-    <div class="container_sobre">
+    <div class="container_sobre" id="sobre">
         <!--<div class="container_sobre_img">
             <img src="imagens/imagemtecnico.png" alt="">
         </div>-->
@@ -68,7 +85,7 @@
         </div>
     </div>
     <!--<div class="linha"></div>-->
-    <div class="container_servicos">
+    <div class="container_servicos" id="servico">
         <div class="container_filho_servicos">
             <h1 class="titulo_servicos">Serviços Prestados</h1>
 
@@ -109,7 +126,7 @@
         </div>
     </div>
 
-    <div class="contato">
+    <div class="contato" id="contato">
         <div>
             <h1>Fale Conosco</h1>
             <span></span>
