@@ -7,6 +7,7 @@
 body {
     font-family: Poppins;
     overflow-x: hidden;
+     background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
 }
 
 .container_head {
@@ -64,6 +65,7 @@ body {
     background-color: #124fa9;
     font-weight: 200;
     animation: subir ease-in-out 2s infinite alternate;
+    text-align: center;
 }
 
 @keyframes subir {
@@ -202,7 +204,7 @@ body {
     gap: 50px;
     padding: 70px;
     /*background-image: linear-gradient(45deg, #ffffff 70%, #677ca7);*/
-    background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
+    /*background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);*/
     color: #fff;
 }
 
@@ -272,7 +274,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);
+    /*background-image: linear-gradient(to right, #0278bdc1 15%, #0d48a1);*/
     color: #fff;
     font-weight: 200;
     font-size: 15px;
@@ -340,6 +342,64 @@ body {
     color: #fff;
     position: relative;
     top: 7px;
+}
+
+.contato div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.contato > div > h1 {
+    font-weight: 500;
+    color: #fff;
+}
+
+.contato > div > span {
+    width: 70vw;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 7px;
+}
+
+.contato div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+}
+
+.contato div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: baseline;
+    gap: 0;
+}
+
+.contato div:nth-child(2) div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000;    
+}
+
+.contato div:nth-child(2) > div img {
+    width: 70px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.contato div:nth-child(2) > div span {
+    height: 100px;
+    width: 2px;
+    background-color: #fff;
+    margin: -2px;
+    position: relative;
+    left: 33px;
 }
 
 footer {
