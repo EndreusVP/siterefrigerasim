@@ -404,6 +404,10 @@ body {
     left: 33px;
 }
 
+.contato div:nth-child(2) div:nth-child(2) > h1 {
+    color: #fff;
+}
+
 .contato div:nth-child(2) div:nth-child(2) > .campo_email {
     display: flex;
     flex-direction: row;
