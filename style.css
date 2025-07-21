@@ -376,7 +376,7 @@ body {
     flex-direction: column;
     padding: 40px;
     align-items: baseline;
-    gap: 0;
+    gap: 0px;
 }
 
 .contato div:nth-child(2) div:nth-child(2) {
@@ -388,7 +388,7 @@ body {
     gap: 20px;
 }
 
-.contato div:nth-child(2) > div img {
+.contato div:nth-child(2) > div > a > img {
     width: 70px;
     border: solid 3px #fff;
     border-radius: 50%;
